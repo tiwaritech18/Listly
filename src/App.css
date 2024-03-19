@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&family=DM+Mono:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+/* Box model consistency */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Prevent font size inflation */
+html {
+  -moz-text-size-adjust: none;
+  -webkit-text-size-adjust: none;
+  text-size-adjust: none;
+}
+
+/* Remove default margin for better control */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+  margin: 0;
+  font-family: "Nunito", sans-serif;
+}
+button{
+  font-family: "Nunito", sans-serif;
+}
+
+/* Remove default list styles for semantic control */
+ul[role="list"],
+ol[role="list"] {
+  list-style: none;
+}
+
+/* Set core body defaults */
+body {
+  min-height: 100vh;
+  line-height: 1.5;
+  text-rendering: optimizeSpeed;
+}
+
+/* Set shorter line heights for headings and interactivity */
+h1,
+h2,
+h3,
+h4,
+button,
+input,
+label {
+  line-height: 1.1;
+}
+
+/* Balance text wrapping on headings */
+h1,
+h2,
+h3,
+h4 {
+  text-wrap: balance;
+}
+
+/* Unobtrusive default link styles */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+  color: currentColor;
+}
+
+/* Responsive image defaults */
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+/* Inherit fonts for forms */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* Minimum height for textareas */
+textarea:not([rows]) {
+  min-height: 10em;
+}
+
+/* Extra scroll margin for targeted elements */
+:target {
+  scroll-margin-block: 5ex;
+}
+
+/* Disable animations/transitions for reduced motion preference */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+body {
+  background: linear-gradient(to right, #e891cb 0%, #f3aaca 50%, #edcaba 100%);
+  background-attachment: fixed;
+}
+
+
+.glass-container {
+  background: rgba(255, 255, 255, 0.2); /* Semi-transparent white background */
+  backdrop-filter: blur(10px); /* Apply blur effect */
+  border-radius: 10px; /* Optional rounded corners */
+}
+
