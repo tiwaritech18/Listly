@@ -11,9 +11,7 @@ const RandomQuote = () => {
 
   return (
     <Container>
-      <div className="pt-16 pb-8  max-w-80 flex flex-col items-center mx-auto my-0">
-        <p className="flex">{randomQuote.quote}</p>
-
+      <div className="pt-1 pb-8  max-w-80 flex flex-col items-center mx-auto my-0">
         <div className="pt-16 pb-8">
           <p className="flex max-w-80">
             {randomQuote.quote}
