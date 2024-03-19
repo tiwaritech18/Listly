@@ -68,7 +68,7 @@ const SingleTodo = ({ id, text, completed }) => {
           )}
           {inputField ? (
             <>
-              <div className="input-field fixed left-10 w-60 h-fit py-3 bg-white rounded-xl flex flex-col justify-items-start items-start px-4">
+              <div className="input-field fixed left-10 w-60 h-fit py-3 bg-white rounded-xl flex flex-col justify-items-start items-start px-4 z-20">
                 {error && (
                   <p className="text-red-300 text-center">
                     task cannot be empty🙃
