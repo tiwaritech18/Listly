@@ -11,7 +11,7 @@ const RandomQuote = () => {
 
   return (
     <div className="pt-16 pb-8">
-      <p className="flex">{randomQuote.quote}
+      <p className="flex max-w-80">{randomQuote.quote}
         <IoMdQuote className="text-pink-600"/>
       </p>
         <p className="italic ">- {randomQuote.author}</p>
