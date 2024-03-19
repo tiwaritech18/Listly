@@ -8,7 +8,7 @@ const TodoList = () => {
   
 
   return (
-    <div className="todo mt-9">
+    <div className="mt-9">
           {todoList.map((todo) => {
             return (
               <SingleTodo key={todo.id} {...todo}></SingleTodo>

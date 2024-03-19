@@ -8,9 +8,9 @@ const Footer = () => {
 
     if(selector.length < 1){
       return <>
-      <h1 className="text-center font-bold text-xl">Start Fresh: Add Your First Task!📜</h1>
+      <h1 className="text-center font-bold text-lg ">Start Fresh: Add Your First Task!📜</h1>
       <div className="flex justify-center items-center">
-        <p className="fixed bottom-10 text-center " >made with love❤️</p>
+        <p className="fixed bottom-10 text-center " >made with love❤️ by Rohit</p>
       </div>
       </>
     }else{
